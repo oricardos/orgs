@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 22,
     lineHeight: 42,
-    fontWeight: "bold",
+    fontFamily: 'RubikBold'
   },
   farmContent: {
     flexDirection: 'row',
@@ -39,24 +39,27 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   farmLogo: {
-    height: 30,
-    width: 30,
+    height: 50,
+    width: 50,
+    borderRadius: 200 / 2
   },
   farm: {
     fontSize: 16,
     lineHeight: 26,
+    fontFamily: 'RubikSemiBold',
   },
   description: {
     fontSize: 16,
     lineHeight: 22,
     color: "#c4c4c4",
+    fontFamily: 'RubikRegular',
   },
   price: {
     marginTop: 16,
     fontSize: 24,
     lineHeight: 48,
     color: "#2A9F85",
-    fontWeight: "bold",
     alignSelf: "flex-end",
+    fontFamily: 'RubikSemiBold',
   },
 });
