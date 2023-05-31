@@ -2,11 +2,11 @@ import React from "react";
 import { Header } from "../components/Header";
 import { Details } from "../components/Details";
 
-export const Basket = () => {
+export const Basket = ({top, detail}) => {
   return (
     <>
-      <Header />
-      <Details />
+      <Header {...top} />
+      <Details {...detail} />
     </>
   );
 };

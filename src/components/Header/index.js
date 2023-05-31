@@ -4,11 +4,11 @@ import topo from '../../../assets/topo.png'
 
 const width = Dimensions.get("screen").width;
 
-export const Header = () => {
+export const Header = ({title}) => {
     return (
         <>
       <Image style={styles.img} source={topo} />
-      <Text style={styles.title}>Detalhe da Cesta</Text>
+      <Text style={styles.title}>{title}</Text>
     </>
     )
 }

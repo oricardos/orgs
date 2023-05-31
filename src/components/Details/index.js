@@ -1,22 +1,19 @@
 import React from "react";
 import { Text, View, StyleSheet, Image } from "react-native";
 
-import farm from "../../../assets/logo.png";
-
-export const Details = () => {
+export const Details = ({name, farmLogo, farm, description, price}) => {
   return (
     <>
       <View style={styles.wrapper}>
-        <Text style={styles.name}>Cesta de Verduras</Text>
+        <Text style={styles.name}>{name}</Text>
         <View style={styles.farmContent}>
-          <Image source={farm} style={styles.farmLogo} />
-          <Text style={styles.farm}>Jenny Jack Farm</Text>
+          <Image source={farmLogo} style={styles.farmLogo} />
+          <Text style={styles.farm}>{farm}</Text>
         </View>
         <Text style={styles.description}>
-          Uma cesta com produtos selecionados cuidadosamente da fazenda direto
-          para sua cozinha.
+          {description}
         </Text>
-        <Text style={styles.price}>R$40,00</Text>
+        <Text style={styles.price}>{price}</Text>
       </View>
     </>
   );
