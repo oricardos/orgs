@@ -1,22 +1,12 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, FlatList } from "react-native";
 
-export const List = ({ title, list }) => {
-  return (
-    <View style={styles.wrapper}>
-      <Text style={styles.title}>{title}</Text>
-
-      {list.map(({ name, image }) => {
-        return (
-          <View key={name} style={styles.item}>
-            <Image source={image} style={styles.image} />
-            <Text style={styles.itemName}>{name}</Text>
-          </View>
-        );
-      })}
+export const List = ({item: {name, image}}) => {
+    return <View key={name} style={styles.item}>
+      <Image source={image} style={styles.image} />
+      <Text style={styles.itemName}>{name}</Text>
     </View>
-  );
-};
+}
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -36,6 +26,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#ececec",
     paddingVertical: 16,
+    marginHorizontal: 24,
   },
   image: {
     height: 46,
