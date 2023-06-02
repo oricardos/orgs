@@ -1,7 +1,7 @@
 import React from "react";
-import { Text, View, StyleSheet, Image } from "react-native";
+import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 
-export const Details = ({name, farmLogo, farm, description, price}) => {
+export const Details = ({name, farmLogo, farm, description, price, button}) => {
   return (
     <>
       <View style={styles.wrapper}>
@@ -14,6 +14,10 @@ export const Details = ({name, farmLogo, farm, description, price}) => {
           {description}
         </Text>
         <Text style={styles.price}>{price}</Text>
+
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>{button}</Text>
+      </TouchableOpacity>
       </View>
     </>
   );
@@ -59,4 +63,17 @@ const styles = StyleSheet.create({
     alignSelf: "flex-end",
     fontFamily: 'RubikSemiBold',
   },
+  button: {
+    marginTop: 16,
+    backgroundColor: '#2A9F85',
+    paddingVertical: 16,
+    borderRadius: 6,
+  },
+  buttonText: {
+    fontSize: 16,
+    lineHeight: 22,
+    textAlign: 'center',
+    color: '#FFF',
+    fontFamily: 'RubikSemiBold',
+  }
 });
