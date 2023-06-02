@@ -1,6 +1,8 @@
 
 # Project orgs
 
+ ![logo](https://github.com/oricardos/orgs/blob/master/assets/logo-doc.png) 
+
 This is a React Native project created with Expo.
 
 ## Prerequisites
@@ -48,3 +50,6 @@ You can customize the project according to your needs by modifying and adding co
 - [React Native Documentation](https://reactnative.dev)
 
 Enjoy developing the orgs project! 🧺
+
+
+![screen](https://github.com/oricardos/orgs/blob/master/assets/screen.jpeg)
